@@ -1,0 +1,68 @@
+/* -------------------------------------------- A PROPOS PAGE ------------------------------------------------------------------ */
+.box-a-propos {
+  display: flex;
+  gap: 8em;
+  margin: 10em;
+  position: relative; /* permet aux enfants en absolute de se positionner relativement à ce conteneur */
+}
+
+.box-a-propos img {
+  width: auto;
+  height: auto;
+  position: relative; /* pour qu’il passe au-dessus du SVG */
+  z-index: 2;
+}
+
+.box-a-propos p {
+  z-index: 2;
+  font-size: 20px;
+  margin-left: 20px;
+  position: relative;
+}
+
+#moi h2 {
+  margin-left: 3em;
+}
+
+@media screen and (max-width: 1024px) {
+  .box-a-propos {
+    gap: 4em;
+    margin: 5em 2em;
+  }
+
+  .box-a-propos p {
+    font-size: 18px;
+  }
+
+  #moi h2 {
+    margin-left: 1.5em;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box-a-propos {
+    flex-direction: column;
+    margin: 4em 1.5em;
+    gap: 2em;
+    align-items: center;
+  }
+
+  .box-a-propos img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .box-a-propos p {
+    margin-left: 0;
+    text-align: justify;
+    font-size: 16px;
+  }
+
+  #moi h2 {
+    margin-left: 0;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+}

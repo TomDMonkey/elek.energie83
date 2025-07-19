@@ -1,0 +1,89 @@
+/* -------------------------------------------- OBJECTIF PAGE ------------------------------------------------------------------ */
+
+.objectifs-processus {
+  background-color: #fdfdfd;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.objectifs-processus .section-title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #005eff;
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+}
+
+.objectifs-processus .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.objectifs-processus .item {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.objectifs-processus img {
+  width: 50px;
+  margin-bottom: 1rem;
+  filter: hue-rotate(200deg);
+}
+
+.objectifs-processus h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.objectifs-processus p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.fa-solid {
+  color: #3e72ce;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .objectifs-processus {
+    padding: 4rem 1.5rem;
+  }
+
+  .objectifs-processus .section-title {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+
+  .objectifs-processus .grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .objectifs-processus .item {
+    max-width: 100%;
+  }
+
+  .objectifs-processus img {
+    width: 40px;
+  }
+
+  .objectifs-processus h3 {
+    font-size: 1rem;
+  }
+
+  .objectifs-processus p {
+    font-size: 0.95rem;
+  }
+
+  .fa-solid {
+    font-size: 26px;
+  }
+}

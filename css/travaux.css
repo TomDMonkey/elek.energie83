@@ -1,0 +1,102 @@
+/* -------------------- SECTION TRAVAUX ------------------------ */
+
+#travaux {
+  padding: 6em 2em;
+}
+
+.container-travaux {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#travaux h2 {
+  font-size: 36px;
+  margin-bottom: 1em;
+  color: #2a2a2a;
+}
+
+.intro-travaux {
+  font-size: 18px;
+  font-weight: 500;
+  color: #3e72ce;
+  margin-bottom: 1.5em;
+}
+
+#travaux p {
+  font-size: 17px;
+  color: #444;
+  margin-bottom: 1.2em;
+  line-height: 1.6;
+}
+
+.liste-prestations {
+  list-style: disc;
+  padding-left: 2em;
+  margin-bottom: 1.5em;
+  color: #333;
+}
+
+.liste-prestations li {
+  margin-bottom: 0.5em;
+  font-size: 16px;
+}
+
+/* Galerie avant/après */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+.before-after {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.before-after img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.before-after img:hover {
+  transform: scale(1.05);
+}
+
+/* -------- Responsive Travaux -------- */
+
+@media screen and (max-width: 768px) {
+  #travaux {
+    padding: 4em 1.5em;
+  }
+
+  #travaux h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .container-travaux {
+    text-align: left;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .before-after {
+    width: 90%;
+  }
+}
